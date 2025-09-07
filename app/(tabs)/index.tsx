@@ -1,5 +1,6 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import { StyleSheet, Platform, Pressable } from 'react-native';
+import { useRouter } from 'expo-router';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -7,6 +8,8 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
 export default function HomeScreen() {
+  const router = useRouter();
+
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
@@ -16,39 +19,33 @@ export default function HomeScreen() {
           style={styles.reactLogo}
         />
       }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
+      <ThemedView style={styles.centeredContainer}>
+        <ThemedText type="title" style={styles.title}>
+          ¡Bienvenido a IAN Bot!
         </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
+        <ThemedText style={styles.description}>
+          Tu asistente inteligente para resolver dudas, aprender y automatizar tareas. 
+          ¡Explora las funciones y comienza ahora!
         </ThemedText>
+        <Pressable style={styles.button} onPress={() => router.push('/login')}>
+          <ThemedText type="defaultSemiBold" style={styles.buttonText}>
+            Comenzar
+          </ThemedText>
+        </Pressable>
       </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+
+      <ThemedView style={styles.featuresContainer}>
+        <ThemedText type="subtitle" style={styles.featuresTitle}>
+          ¿Qué puedes hacer aquí?
+        </ThemedText>
+        <ThemedText style={styles.featureItem}>• Consultar información y resolver dudas</ThemedText>
+        <ThemedText style={styles.featureItem}>• Automatizar tareas repetitivas</ThemedText>
+        <ThemedText style={styles.featureItem}>• Aprender sobre nuevas tecnologías</ThemedText>
+      </ThemedView>
+
+      <ThemedView style={styles.footer}>
+        <ThemedText style={styles.footerText}>
+          © 2025 IAn Bot | Versión 1.0
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
@@ -56,14 +53,60 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
+  centeredContainer: {
     alignItems: 'center',
-    gap: 8,
+    marginTop: 32,
+    marginBottom: 24,
+    gap: 16,
   },
-  stepContainer: {
-    gap: 8,
+  logo: {
+    width: 120,
+    height: 74,
     marginBottom: 8,
+  },
+  title: {
+    fontSize: 28,
+    textAlign: 'center',
+    marginBottom: 4,
+  },
+  description: {
+    textAlign: 'center',
+    color: '#555',
+    marginBottom: 8,
+  },
+  button: {
+    backgroundColor: '#1D3D47',
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 24,
+    marginTop: 12,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 18,
+  },
+  featuresContainer: {
+    marginTop: 24,
+    marginBottom: 16,
+    paddingHorizontal: 16,
+    gap: 6,
+  },
+  featuresTitle: {
+    fontSize: 20,
+    marginBottom: 6,
+  },
+  featureItem: {
+    fontSize: 16,
+    color: '#333',
+  },
+  footer: {
+    alignItems: 'center',
+    marginTop: 32,
+    marginBottom: 16,
+  },
+  footerText: {
+    color: '#888',
+    fontSize: 14,
   },
   reactLogo: {
     height: 178,
@@ -71,5 +114,6 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     position: 'absolute',
+    opacity: 0.1,
   },
 });
