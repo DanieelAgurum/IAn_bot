@@ -5,7 +5,8 @@
 
 .main-header {
     /* background: #2d2d7f !important; */
-    background: #92C5FC;
+    /* background: #92C5FC; */
+    background: rgb(40, 45, 208);
     position: fixed;
     top: 0;
     left: 0;
@@ -67,6 +68,7 @@
 
 .hero {
     height: 100vh;
+    background-image: url('../assets/igor-omilaev-FHgWFzDDAOs-unsplash.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -81,7 +83,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(40, 45, 208);
+    background-color: rgba(0, 0, 0, 0.685);
+    /* background: rgb(40, 45, 208); */
     z-index: 0;
 }
 
