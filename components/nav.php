@@ -11,7 +11,7 @@
                 <a href="#Instituciones" class="nav-link">Instituciones</a>
             </li>
             <li class="nav-item">
-                <a href="#Iniciar" class="nav-link">Iniciar sesión</a>
+                <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#authModal">Iniciar sesión</a>
             </li>
         </ul>
     </div>

@@ -1,3 +1,8 @@
+* {
+    font-weight: 500;
+
+}
+
 .main-header {
     /* background: #2d2d7f !important; */
     background: #92C5FC;
@@ -22,7 +27,7 @@
 .navbar-nav .nav-link {
     font-size: 12px;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 500;
     color: #fff;
     position: relative;
     text-decoration: none;
@@ -88,4 +93,110 @@
 .hero h1,
 .hero p {
     color: #fff;
+}
+
+/* Estilos generales de inputs */
+.form-floating .form-control {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+    color: #333;
+}
+
+.form-floating .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+    background: transparent;
+}
+
+.form-floating label {
+    color: #777;
+    transition: all 0.2s ease;
+}
+
+.form-floating .form-control:focus~label,
+.form-floating .form-control:not(:placeholder-shown)~label {
+    transform: translateY(-0.8rem);
+    font-size: 0.85rem;
+    color: #007bff;
+}
+
+/* Botón de Iniciar sesión */
+.btn-auth-login {
+    background: linear-gradient(90deg, #4a90e2, #357ab8);
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+}
+
+.btn-auth-login:hover {
+    background: linear-gradient(90deg, #357ab8, #4a90e2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de Registrarse */
+.btn-auth-register {
+    background: linear-gradient(90deg, #4a90e2, #357ab8);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+}
+
+.btn-auth-register:hover {
+    background: linear-gradient(90deg, #357ab8, #4a90e2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Checkbox personalizado */
+.custom-checkbox .form-check-input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4a90e2;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    margin-right: 10px;
+    background: none;
+}
+
+.custom-checkbox .form-check-input:hover {
+    border-color: #357ab8;
+    box-shadow: 0 0 5px rgba(53, 122, 184, 0.5);
+}
+
+.custom-checkbox .form-check-input:checked::after {
+    content: "\2713";
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-checkbox .form-check-input:checked {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+}
+
+.custom-checkbox .form-check-label {
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
 }
