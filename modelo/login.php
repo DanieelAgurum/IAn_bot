@@ -105,7 +105,7 @@
 
                         <!-- Name input -->
                         <div class="form-floating mb-4">
-                            <input type="text" id="registerName" class="form-control" placeholder="Nombre completo" required />
+                            <input type="text" id="registerName" class="form-control" placeholder="Nombre completo" required/>
                             <label for="registerName">Nombre completo</label>
                         </div>
 

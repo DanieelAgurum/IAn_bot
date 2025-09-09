@@ -43,7 +43,7 @@
                 </div>
             </div>
         </section>
-        <section class="text-center">
+        <section class="text-center p-3">
             <a href="" class="text-white me-4"><i class="fab fa-facebook-f"></i></a>
             <a href="" class="text-white me-4"><i class="fab fa-twitter"></i></a>
             <a href="" class="text-white me-4"><i class="fab fa-google"></i></a>

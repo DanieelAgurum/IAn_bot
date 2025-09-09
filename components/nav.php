@@ -11,6 +11,9 @@
                 <a href="#Instituciones" class="nav-link">Instituciones</a>
             </li>
             <li class="nav-item">
+                <a href="#Glosario" class="nav-link">Glosario</a>
+            </li>
+            <li class="nav-item">
                 <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#authModal">Iniciar sesión</a>
             </li>
         </ul>
