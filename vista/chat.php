@@ -19,13 +19,27 @@
 <body class="d-flex flex-column min-vh-100">
     <div id="contenedor-chat">
         <div class="chat-list" id="chat-list">
+            <!-- Botón nuevo chat -->
+            <div class="new-chat">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>Nuevo chat</span>
+            </div>
+
+
+            <!-- Encabezado -->
+            <div class="chat-header">
+                <h3>Chats</h3>
+            </div>
+
+            <!-- Lista de chats -->
             <div class="info-chat">
                 <div class="chat-text">
-                    <strong>Titulo</strong>
+                    <strong>Título</strong>
                     <small>22/09/2025</small>
                 </div>
                 <div class="chat-options">⋮</div>
             </div>
+
             <div class="info-chat">
                 <div class="chat-text">
                     <strong>Otro Chat</strong>
@@ -33,10 +47,11 @@
                 </div>
                 <div class="chat-options">⋮</div>
             </div>
+
             <div class="info-chat">
                 <div class="chat-text">
-                    <strong>Otro Chat</strong>
-                    <small>21/09/2025</small>
+                    <strong>Amigos</strong>
+                    <small>20/09/2025</small>
                 </div>
                 <div class="chat-options">⋮</div>
             </div>
