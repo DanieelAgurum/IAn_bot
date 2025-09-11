@@ -5,10 +5,10 @@
     <div class="collapse navbar-collapse" id="mainMenu">
         <ul class="navbar-nav ms-auto text-uppercase f1">
             <li class="nav-item">
-                <a href="#Inicio" class="nav-link">Inicio</a>
+                <a href="index.php" class="nav-link">Inicio</a>
             </li>
             <li class="nav-item">
-                <a href="#Instituciones" class="nav-link">Instituciones</a>
+                <a href="vista/instituciones.php" class="nav-link">Instituciones</a>
             </li>
             <li class="nav-item">
                 <a href="#Glosario" class="nav-link">Glosario</a>
