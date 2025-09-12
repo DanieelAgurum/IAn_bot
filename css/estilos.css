@@ -377,8 +377,6 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-
-
 @media only screen and (max-width: 767px) {
     .notfound .notfound-404 {
         height: 115px;
@@ -392,4 +390,49 @@
         width: 86px;
         height: 86px;
     }
+}
+
+/* Botón flotante para volver arriba */
+.btn-top {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0dcaf0;
+    /* color tipo .btn-info */
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    /* Oculto por defecto */
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+/* Mostrar con animación */
+.btn-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Efecto hover */
+.btn-top:hover {
+    background-color: #0bb3d9;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto al hacer click */
+.btn-top:active {
+    transform: scale(0.95);
 }
