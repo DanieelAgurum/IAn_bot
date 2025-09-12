@@ -32,6 +32,8 @@
     </div>
 
     <!-- Footer -->
+    <?php include '../components/return.php'; ?>
+    <?php include '../js/return.js'; ?>
     <?php include '../components/footer.php'; ?>
     <?php include '../vista/login.php'; ?>
 
