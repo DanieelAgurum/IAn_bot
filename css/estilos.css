@@ -2,6 +2,10 @@
     font-weight: 500;
 }
 
+body {
+    padding-top: 50px;
+}
+
 .main-header {
     /* background: #2d2d7f !important; */
     /* background: #92C5FC; */

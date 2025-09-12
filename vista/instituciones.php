@@ -20,8 +20,15 @@
         </div>
     </header>
 
-    <div class="container mt-5 mb-5">
-        <div class="text-center text-muted fs-5 mt-5 mb-4">
+    <!-- Breadcrumbs -->
+    <div class="container mt-3">
+        <?php include '../components/breadcrumbs.php'; ?>
+        <?php renderBreadcrumbs(); ?>
+    </div>
+
+
+    <div class="container mb-5">
+        <div class="text-center text-muted fs-5 mb-4">
             <i class="bi bi-shield-check text-primary me-2"></i>
             Conoce instituciones que asociadas a la salud mental.
         </div>
