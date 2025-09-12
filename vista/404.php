@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-
+<body>
+    
     <!-- Header -->
     <header class="main-header">
         <div class="container">

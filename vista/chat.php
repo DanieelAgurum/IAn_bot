@@ -10,13 +10,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/stylesChat.css" />
 </head>
-<header class="main-header">
-    <div class="container">
-        <?php include '../components/nav.php'; ?>
-    </div>
-</header>
 
-<body class="d-flex flex-column min-vh-100">
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <?php include '../components/nav.php'; ?>
+        </div>
+    </header>
     <div id="contenedor-chat">
         <div class="chat-list" id="chat-list">
             <!-- Botón nuevo chat -->
@@ -24,7 +25,6 @@
                 <i class="fa-solid fa-pen-to-square"></i>
                 <span>Nuevo chat</span>
             </div>
-
 
             <!-- Encabezado -->
             <div class="chat-header">
