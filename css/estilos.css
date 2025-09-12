@@ -403,10 +403,8 @@
     border-radius: 50%;
     border: none;
     background-color: #0dcaf0;
-    /* color tipo .btn-info */
     color: #fff;
     font-size: 1.3rem;
-    /* tamaño de icono */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -414,26 +412,22 @@
     cursor: pointer;
     transition: all 0.3s ease;
     opacity: 0;
-    /* Oculto por defecto */
     visibility: hidden;
     transform: translateY(20px);
 }
 
-/* Mostrar con animación */
 .btn-top.show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-/* Efecto hover */
 .btn-top:hover {
     background-color: #0bb3d9;
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Efecto al hacer click */
 .btn-top:active {
     transform: scale(0.95);
 }
