@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/IAn_bot/css/estilos.css">
 </head>
 
-<body>
+<body class="fondo-404">
 
     <!-- Header -->
     <header class="main-header">
