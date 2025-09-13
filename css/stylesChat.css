@@ -1,7 +1,7 @@
 /* Contenedor principal */
 #contenedor-chat {
     display: flex;
-    height: 94vh;
+    height: 100vh;
     border: 1px solid #ddd;
     background: #f0f2f5;
     overflow: hidden;
