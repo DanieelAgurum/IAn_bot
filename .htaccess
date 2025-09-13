@@ -1,0 +1,17 @@
+# Activar reescritura de URLs
+RewriteEngine On
+
+
+# Evitar que afecte a archivos o carpetas existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirigir solo URLs válidas a index.php (opcional)
+# Si quieres que todas pasen por index.php, puedes filtrar aquí
+RewriteRule ^(home|about|contact)/?$ index.php?page=$1 [L,QSA]
+
+# Si la URL es exactamente "vista" o empieza con "vista/"
+RewriteRule ^vista(/)?$ vista/404.php?page=home [L,QSA]
+
+# Página 404 personalizada
+ErrorDocument 404 /IAn_bot/vista/404.php
