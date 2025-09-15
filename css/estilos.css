@@ -740,11 +740,11 @@ header {
 
 
 /* Fondo de la pagina no encontrada */
-/* .fondo-404 {
+.fondo-404 {
     background-image: url('/IAn_bot/img/fondo1.jpg');
     background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat; 
     width: 100%;
     height: 100vh;
-} */
+} 

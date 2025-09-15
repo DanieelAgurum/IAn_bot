@@ -13,12 +13,8 @@
 
 <body class="fondo-404">
 
-    <!-- Header -->
-    <header class="main-header">
-        <div class="container">
-            <?php include '../components/nav.php'; ?>
-        </div>
-    </header>
+    <?php include '../components/nav.php'; ?>
+
 
     <div id="notfound">
         <div class="notfound">
@@ -36,6 +32,7 @@
     <?php include '../components/footer.php'; ?>
     <?php include '../vista/login.php'; ?>
 
+    <script src="/IAn_bot/js/navbar.js"></script>
     <script src="/IAn_bot/js/return.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
