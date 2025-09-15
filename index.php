@@ -14,24 +14,18 @@
 <body>
 
     <!-- Header -->
-    <header id="main-navbar" class="main-header">
+    <header id="" class="eader">
         <div class="container">
             <?php include 'components/nav.php'; ?>
         </div>
-    </header>
-
-    <section class="hero">
-        <div class="container animate__animated animate__fadeInLeft animate__slow">
-            <div class="row align-items-center">
-                <div class="col-lg-6 hero-content">
-                    <h1 class="display-4 fw-bold">Bienvenido a nuestro sitio</h1>
-                    <p class="lead mb-4">Explora nuestras funcionalidades y conoce todo lo que ofrecemos.</p>
-                    <a href="#!" class="btn btn-dark btn-lg">Comenzar</a>
-                </div>
+        <div class="contenedor head">
+            <div class="animate__animated animate__fadeInLeft animate__slow">
+                <h1 class="">Bienvenido a nuestro sitio</h1>
+                <p class="">Explora nuestras funcionalidades y conoce todo lo que ofrecemos.</p>
+                <a href="#!" class="btn btn-dark btn-lg">Comenzar</a>
             </div>
         </div>
-    </section>
-
+    </header>
 
     <!-- Footer -->
     <?php include 'components/return.php'; ?>
