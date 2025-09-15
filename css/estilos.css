@@ -9,10 +9,8 @@
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 2px;
-    background: linear-gradient(45deg, #1e3c72, #2a5298, #4e79d7);
+    -webkit-text-fill-color: #ffffff;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     display: inline-block;
     animation: float-text 3s ease-in-out infinite;
@@ -60,7 +58,7 @@
 
 header {
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.303) 0%, rgba(251, 194, 235, 0.229) 100%), url(../img/fondo1.jpg);
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.303) 0%, rgba(251, 194, 235, 0.229) 100%), url(../img/igor-omilaev-gVQLAbGVB6Q-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
